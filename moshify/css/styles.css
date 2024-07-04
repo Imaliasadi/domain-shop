@@ -9,6 +9,8 @@ html{
     --color-body: #918ca4;
 }
 
+/*typography*/
+
 body{
     font-family: Inter, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: var(--color-body);
@@ -46,4 +48,28 @@ p{
     h1{
         font-size: 2.4;
     }
+}
+/*links*/
+a{
+    text-decoration: none;
+}
+.link-arrow:hover::after{
+  margin-left: 10px
+}
+.link-arrow::after{
+    content: '-->';
+    transition: margin 0.15s;
+}
+.link-arrow{
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .link-arrow {
+        font-size: 1.5rem;
+    } 
 }
