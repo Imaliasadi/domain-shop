@@ -126,3 +126,20 @@ a{
     }
     
 }
+/*icons*/
+.icon{
+   width: 40px;
+   height: 40px;
+}
+.icon--primary{
+    fill: var(--color-primery);
+}
+.icon-container{
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    background-color: #f3f9fa;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
