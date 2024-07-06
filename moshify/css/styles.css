@@ -7,6 +7,8 @@ html{
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
+    --color-border: #ccc;
+    --border-radius: 30px;
 }
 *,
 *::after,
@@ -108,6 +110,7 @@ a{
         font-size: 1.2rem;
     }
 }
+/*lists*/
 .list{
     list-style: none;
     padding-left: 0;
@@ -207,4 +210,40 @@ a{
 }
 @media screen and (min-width) {
     font-size: 1.5rem;
+}
+
+/*inputs*/
+.input{
+    padding: 1.5rem 3.5rem;
+    border: 0;
+    border-radius: var(--border-radius);
+    outline: 0;
+    font-size: 2rem;
+    color: var(--color-headings);
+    border: 1px solid var(--color-border);
+}
+
+::placeholder{
+    color: #cdcbd7;
+}
+.input-group{
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+}
+
+.input-group .input{
+    flex-grow: 1;
+    border: 0;
+    padding: 1.5rem 1rem;
+}
+
+.input-group .btn{
+    margin: 4px;
+}
+@media screen and (min-width: 1024px) {
+    input{
+        font-size: 1.5rem;
+    }
+    
 }
