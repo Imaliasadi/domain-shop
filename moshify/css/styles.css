@@ -210,8 +210,10 @@ a{
     background-color: var(--color-headings);
     color: #ffff;
 }
-@media screen and (min-width) {
-    font-size: 1.5rem;
+@media screen and (min-width: 1024px) {
+    .btn{
+        font-size: 1.5rem;
+    }
 }
 
 /*inputs*/
@@ -373,7 +375,7 @@ content: open-quote;
 @media screen and (min-width: 1024px) {
     .quote{
         font-size: 2rem;
-        line-height: 2.7rem;
+        line-height: 2.rem;
     }
     .quote__author{
         font-size: 2.4;
