@@ -436,12 +436,13 @@ content: open-quote;
     right: -3.2rem;
 }
 
-.testimonial .quote{
-}
 @media screen and (min-width: 768px) {
     .testimonial .quote,
     .testimonial .quote__author{
         font-size: 2rem;
+    }
+    .testimonial .quote{
+        margin-left: 6rem;
     }
 }
 
