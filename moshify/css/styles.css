@@ -692,3 +692,23 @@ content: open-quote;
     }
     
 }
+
+/*features block*/
+.feature__heading{
+    margin: 1rem 2rem;
+}
+.feature{
+    gap: 4rem;
+    margin: 6rem 0;
+}
+.feature__img{
+    width: 100%;
+}
+.feature:first-of-type{
+    margin: 3rem;
+}
+@media screen and (min-width:768px) {
+ .feature:nth-last-of-type(even) .feature__content{
+    order: 2;
+ }
+}
